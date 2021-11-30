@@ -7,3 +7,7 @@ Day1
  
 Day2
  - Solved some questions on Time complexity fron Gfg.
+
+Day3
+ - Learned Recursion and made notes on it.
+ - Solved 2-3 problems on that
