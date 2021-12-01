@@ -1,0 +1,56 @@
+Ques1: Print numbers from 1 to N without the help of loops.
+
+      Example 1:
+
+      Input:
+      N = 10
+      Output: 1 2 3 4 5 6 7 8 9 10
+      
+      Your Task:
+      This is a function problem. You only need to complete the function printNos() that takes N as parameter and prints number from 1 to N recursively. Don't print newline, it       will be added by the driver code.
+      
+      Code:
+      class Solution
+      {
+    
+          public void printNos(int N)
+      {
+        //Your code here
+        
+       if(N<=0){
+            return; 
+        }
+        printNos(N-1);
+        System.out.print(N+" ");
+     }
+    
+  }
+  
+  
+ Ques2: You are given an integer N. Print numbers from 1 to N without the help of loops.
+
+      Example 1:
+
+     Input:
+     N = 5
+     Output:
+     1 2 3 4 5
+     Explanation:
+     We have to print numbers from 1 to 5.
+     
+     Your Task:  
+     You don't need to read input. Your task is to complete the function printTillN() which takes an integer N as an input parameter and print numbers from 1 to N space-          separated integers without the help of loops.
+     Note: print newline character at the end.
+     
+     Code:
+     class Solution{
+    static void printTillN(int N){
+        // code here
+        if(N<=0){
+           return; 
+        }
+        printTillN(N-1);
+        System.out.print(N+" ");
+    }
+}
+         
