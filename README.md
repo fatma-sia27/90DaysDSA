@@ -10,4 +10,7 @@ Day2
 
 Day3
  - Learned Recursion and made notes on it.
- - Solved 2-3 problems on that
+ - Solved 2-3 problems on that.
+ 
+Day4
+ - Practised school level ques from gfg.
