@@ -24,4 +24,7 @@ Day6
 
 Day7
  - Java recursion through notes.
+
+Day8
+ - Suduko solver
  
