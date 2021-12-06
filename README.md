@@ -21,3 +21,7 @@ Day5
 
 Day6
  - https://www.youtube.com/watch?v=u-HgzgYe8KA
+
+Day7
+ - Java recursion through notes.
+ 
