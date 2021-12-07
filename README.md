@@ -31,3 +31,5 @@ Day8
 Day9
  - Solved GFG problems on recursion.
  
+Day10
+ - Practised medium level questions on GFG.
