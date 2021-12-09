@@ -33,3 +33,9 @@ Day9
  
 Day10
  - Practised medium level questions on GFG.
+
+Day11
+ - Revised concept of arrays.
+ 
+Day12
+ - solved array problems.
