@@ -39,5 +39,13 @@ Day11
  
 Day12
  - solved array problems.
+ 
 Day13
  - Solved ques from leetcode.
+ 
+Day14
+ - Learned stacks.
+ - Learned its theory.
+
+Day15
+ - Done its implementation.
