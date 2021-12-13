@@ -49,3 +49,6 @@ Day14
 
 Day15
  - Done its implementation.
+
+Day16
+ - Practised ques from GFG on stacks.
