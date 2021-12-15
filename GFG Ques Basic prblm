@@ -1,0 +1,58 @@
+Ques1.
+ Given a mathematical equation using numbers/variables and +, -, *, /. Print the equation in reverse.
+ 
+Code:
+ class Solution
+{
+   
+    String reverseEqn(String S)
+    {
+        // your code here\
+        Stack<String> stk=new Stack<>();
+        String st="";
+        for(int i=0; i<S.length(); i++){
+            char ch=S.charAt(i);
+            if(ch=='+' || ch=='-' || ch=='*' || ch=='/'){
+                stk.push(st);
+                st="";
+                String x="";
+                x+=ch;
+                stk.push(x);
+            }
+            else{
+                st+=ch;
+            }
+            
+        }
+        stk.push(st);
+        String s="";
+        while(!stk.isEmpty()){
+            s+=stk.peek();
+            stk.pop();
+        }
+        return s;
+    }
+}
+
+
+Ques2.
+ Given an array, find maximum sum of smallest and second smallest elements chosen from all possible sub-arrays. More formally, if we write all (nC2) sub-arrays of array of size >=2 and find the sum of smallest and second smallest, then our answer will be maximum sum among them.
+ 
+Code:
+ class Solution {
+    
+    public static long pairWithMaxSum(long arr[], long N)
+    {
+        // Your code goes here
+        long sum=0, maxSum=0;
+        if(arr.length<=1){
+            return 0;
+        }
+        for(int i=0;i<arr.length-1;i++)
+        {
+            sum=arr[i]+arr[i+1];
+            maxSum=Math.max(maxSum,sum);
+        }
+        return maxSum;
+    }
+}
