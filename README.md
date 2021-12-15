@@ -52,3 +52,7 @@ Day15
 
 Day16
  - Practised ques from GFG on stacks.
+
+Day14
+ - Solved Reversing the equation and more problems.
+ - Solved que of point 2 on GFG.
