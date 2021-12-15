@@ -56,3 +56,7 @@ Day16
 Day14
  - Solved Reversing the equation and more problems.
  - Solved que of point 2 on GFG.
+
+Day15
+ - Learned and revised notes of LinkedList.
+ - made notes.
