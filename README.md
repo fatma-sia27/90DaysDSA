@@ -60,3 +60,6 @@ Day14
 Day15
  - Learned and revised notes of LinkedList.
  - made notes.
+
+Day16
+ - Solved LinkedList questions from leetcode.
