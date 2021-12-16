@@ -1,0 +1,69 @@
+Ques1. 
+ Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+Code:
+ class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode temp=head;
+        ListNode dum=new ListNode();
+        ListNode pre=dum;
+        pre.next=temp;
+        if(head==null){
+            return null;
+        }
+        while(temp!=null){
+            if(temp.val==val){
+                pre.next=temp.next;
+                temp=temp.next;
+            }
+            else{
+                temp=temp.next;
+            pre=pre.next;
+            }
+            // temp=temp.next;
+            // pre=pre.next;
+        }
+        return dum.next;
+    }
+}
+
+Ques2.
+ Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.
+
+Return the decimal value of the number in the linked list.
+
+Code:
+ class Solution {
+    public int getDecimalValue(ListNode head) {
+        ListNode temp=head;
+        int ans=0;
+        while(temp!=null){
+            ans = (ans*2) + temp.val;
+            temp=temp.next;
+        }
+        return ans;
+    }
+}
+
+Ques3.
+ Given the head of a singly linked list, reverse the list, and return the reversed list.
+ 
+Code:
+ class Solution {
+    public ListNode reverseList(ListNode head) {
+        if(head==null)return null;
+        ListNode nxt=head.next;
+        ListNode curr=head;
+        ListNode prev=null;
+        
+        while(curr!=null){
+            
+            curr.next=prev;
+            prev=curr;
+            curr=nxt;
+            if(nxt!=null)nxt=nxt.next;
+        }
+        return prev;
+    }
+}
+ 
