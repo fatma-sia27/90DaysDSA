@@ -53,16 +53,19 @@ Day15
 Day16
  - Practised ques from GFG on stacks.
 
-Day14
+Day17
  - Solved Reversing the equation and more problems.
  - Solved que of point 2 on GFG.
 
-Day15
+Day18
  - Learned and revised notes of LinkedList.
  - made notes.
 
-Day16
+Day19
  - Solved LinkedList questions from leetcode.
 
-Day17
+Day20
  - Solved futhur LinkedList ques.
+
+Day21
+ - Solved LinkedList more ques to make my concepts clear.
