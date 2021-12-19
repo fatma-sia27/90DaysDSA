@@ -69,3 +69,6 @@ Day20
 
 Day21
  - Solved LinkedList more ques to make my concepts clear.
+
+Day22
+ - Linkedlist from GFG.
