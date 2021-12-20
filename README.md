@@ -72,3 +72,8 @@ Day21
 
 Day22
  - Linkedlist from GFG.
+
+Day23
+ - Learned queue data structure.
+ - Made notes
+ - Learned arraydeque also.
