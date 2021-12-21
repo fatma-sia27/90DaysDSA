@@ -77,3 +77,7 @@ Day23
  - Learned queue data structure.
  - Made notes
  - Learned arraydeque also.
+
+Day24
+ - Read priority queue.
+ - Made notes of it.
