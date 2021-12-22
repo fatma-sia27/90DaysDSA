@@ -1,0 +1,66 @@
+Ques:
+Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
+
+For example, the following two linked lists begin to intersect at node c1:
+
+
+The test cases are generated such that there are no cycles anywhere in the entire linked structure.
+
+
+Code:
+ public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode temp1=headA;
+        ListNode temp2=headB;
+        if(headA==headB) return headA;
+        while(temp1!=temp2){
+            if(temp1==null) temp1=headB;
+            else temp1=temp1.next;
+            
+            if(temp2==null) temp2=headA;
+            else temp2=temp2.next;
+        }
+        return temp1;
+    }
+}
+
+Ques2:
+Given the head of a singly linked list, return true if it is a palindrome.
+
+Code:
+class Solution {
+    ListNode reverse(ListNode head){
+        if(head==null || head.next==null) return head;
+        ListNode p=null, c=head, n=head.next;
+        while(c!=null){
+            c.next=p;
+            p=c;
+            c=n;
+            if(n.next!=null) n=n.next;
+        }
+        return p;
+    }
+    void print(ListNode head){
+        ListNode temp=head;
+        while(temp!=null){
+            System.out.print(temp.val+" ");
+        }
+    }
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow=head, fast=head;
+        while(fast.next!=null && fast.next.next!=null){
+            slow=slow.next;
+            fast=fast.next;
+        }
+        slow.next=reverse(slow.next);
+        
+        ListNode start=head, mid=slow.next;
+        while(mid!=null){
+            if(mid.val!=start.val) return false;
+            start=start.next;
+            mid=mid.next;
+        }
+        slow.next=reverse(slow.next);
+        return true;
+    }
+}
