@@ -81,3 +81,6 @@ Day23
 Day24
  - Read priority queue.
  - Made notes of it.
+
+Day25
+ - Solved linkedlist question
