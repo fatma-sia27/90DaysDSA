@@ -84,3 +84,6 @@ Day24
 
 Day25
  - Solved linkedlist question
+
+Day26
+ - Solved questions on stack.
