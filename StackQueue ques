@@ -1,0 +1,46 @@
+Ques1:
+ Given a Queue Q containing N elements. The task is to reverse the Queue. Your task is to complete the function rev(), that reverses the N elements of the queue.
+ 
+ Code:
+  class GfG{
+    //Function to reverse the queue.
+    public Queue<Integer> rev(Queue<Integer> q){
+        //add code here.
+        Queue<Integer> que=new LinkedList<>();
+        Stack<Integer> st = new Stack<>();  
+        int n=q.size();
+        //int i=n;
+        while(n>0){
+            //int r=q.get(i);
+            st.push(q.remove());
+            n--;
+        }
+        
+        while(!st.empty()){
+            int t=st.pop();
+            que.add(t);
+        }
+        return que;
+    }
+}
+Ques2:
+ Given an array, find maximum sum of smallest and second smallest elements chosen from all possible sub-arrays. More formally, if we write all (nC2) sub-arrays of array of size >=2 and find the sum of smallest and second smallest, then our answer will be maximum sum among them.
+ 
+ Code:
+  class Solution {
+    
+    public static long pairWithMaxSum(long arr[], long N)
+    {
+        // Your code goes here
+        long sum=0, maxSum=0;
+        if(arr.length<=1){
+            return 0;
+        }
+        for(int i=0;i<arr.length-1;i++)
+        {
+            sum=arr[i]+arr[i+1];
+            maxSum=Math.max(maxSum,sum);
+        }
+        return maxSum;
+    }
+}
