@@ -87,3 +87,6 @@ Day25
 
 Day26
  - Solved questions on stack.
+
+Day27
+ - Solved Queue and stack problems.
