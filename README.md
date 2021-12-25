@@ -90,3 +90,6 @@ Day26
 
 Day27
  - Solved Queue and stack problems.
+
+Day28
+ - Solved stack questions from gfg.
