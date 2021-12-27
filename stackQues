@@ -1,0 +1,86 @@
+Ques1:
+Given an expression string x. Examine whether the pairs and the orders of “{“,”}”,”(“,”)”,”[“,”]” are correct in exp.
+For example, the function should return 'true' for exp = “[()]{}{[()()]()}” and 'false' for exp = “[(])”.
+
+Code:
+class Solution
+{
+    static boolean ispar(String x)
+    {
+        Stack<Character> stack = new Stack<>();
+        for(int i=0; i<x.length(); i++){
+             char  ch=x.charAt(i);
+             if(ch=='(' || ch=='{' || ch=='['){
+                 stack.push(ch);
+                 continue;
+             }
+             if(stack.isEmpty()){
+                 return false;
+                 break;
+             }
+             if(ch==')'){
+                 if(stack.top=='('){
+                     stack.pop();
+                 }
+                 else{
+                     return false;
+                     break;
+                 }
+             }
+             
+             if(ch==']'){
+                 if(stack.top=='['){
+                     stack.pop();
+                 }
+                 else{
+                     return false;
+                     break;
+                 }
+             }
+             
+             if(ch=='}'){
+                 if(stack.top=='{'){
+                     stack.pop();
+                 }
+                 else{
+                     return false;
+                     break;
+                 }
+             }
+        }
+        if(!stack.isEmpty()){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+}
+
+Ques2:
+Given an integer array Arr of size N. For each element in the array, check whether the right adjacent element (on the next immediate position) of the array is smaller. If next element is smaller, update the current index to that element. If not, then  -1.
+
+Code:
+class Solution {
+    void immediateSmaller(int arr[], int n) {
+        
+        Stack<Integer> st=new Stack<>();
+        st.push(arr[n-1]);
+       // st.pop();
+       arr[n-1]=-1;
+        for(int i=n-2; i>=0; i--){
+            if(arr[i]>st.peek()){
+                int temp=arr[i];
+                arr[i]=st.peek();
+                st.pop();
+                st.push(temp);
+            }
+            else{
+                int t=arr[i];
+                arr[i]=-1;
+                st.pop();
+                st.push(t);
+            }
+        }
+    }
+}
