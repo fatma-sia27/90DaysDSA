@@ -98,4 +98,7 @@ Day29
  - Solved gfg queue problems.
 
 Day30
- - Leaarned and implemented Bubble sort
+ - Learned and implemented Bubble sort
+
+Day31
+ - Solved gfg ques
