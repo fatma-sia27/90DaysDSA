@@ -1,0 +1,70 @@
+Ques1:
+Given an unsorted array, find the minimum difference between any pair in given array.
+
+Code:
+class Solution
+{
+    public int minimum_difference(int[] nums)
+    {
+        Arrays.sort(nums);
+        int min=nums[1]-nums[0];
+        for(int i=0; i<nums.length-1; i++){
+            int diff=nums[i+1]-nums[i];
+            if(diff<min) min=diff;
+        }
+        return min;
+    }
+}
+
+Ques2:
+Given a string consisting of lowercase letters, arrange all its letters in ascending order. 
+
+Code:
+class Solution 
+{ 
+    String sort(String s) 
+    {
+        char ch[]=s.toCharArray();
+        Arrays.sort(ch);
+        String sh=new String(ch);
+        return sh;
+    }
+} 
+
+Ques3:
+Given an array a[ ] of N elements. Consider array as a circular array i.e. element after an is a1. The task is to find maximum sum of the absolute difference between consecutive elements with rearrangement of array elements allowed i.e. after any rearrangement of array elements find |a1 – a2| + |a2 – a3| + …… + |an-1 – an| + |an – a1|.
+
+Code:
+class GFG
+{
+    long maxSum(long arr[] ,int n)
+    {
+        int i=0, j=n-1;
+        Arrays.sort(arr);
+        int count=0;
+        while(i<j){
+            count+=Math.abs(arr[i]-arr[j]);
+            count+=Math.abs(arr[i+1]-arr[j]);
+            i++;
+            j--;
+        }
+        count+=Math.abs(arr[i]-arr[0]);
+        return count;
+    }
+}
+
+Ques4:
+Given an array of N distinct elements, the task is to find all elements in array except two greatest elements in sorted order.
+
+Code:
+class Solution {
+    public long[] findElements( long a[], long n)
+    {
+        Arrays.sort(a);
+        long[] arr=new long[(int)(n-2)];
+        for(int i=0; i<n-2; i++){
+            arr[i]=a[i];
+        }
+        return arr;
+    }
+}
