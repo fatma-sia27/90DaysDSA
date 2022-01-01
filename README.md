@@ -105,3 +105,6 @@ Day31
 
 Day32
  - Solved problems on sorting
+
+Day33
+ - Learned selection sort and insertion sort
