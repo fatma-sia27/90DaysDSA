@@ -108,3 +108,12 @@ Day32
 
 Day33
  - Learned selection sort and insertion sort
+
+Day34
+ - Done ques on sorting
+ 
+Day35
+ - Learned quick sort 
+
+Day36
+ - learned merge sort
