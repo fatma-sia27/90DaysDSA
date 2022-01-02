@@ -1,0 +1,91 @@
+----------- Questions on sorting ---------
+
+Ques1:
+Given an array of N distinct elements, the task is to find all elements in array except two greatest elements in sorted order
+
+Code:
+class Solution {
+    public long[] findElements( long a[], long n)
+    {
+        Arrays.sort(a);
+        long[] arr=new long[(int)(n-2)];
+        for(int i=0; i<n-2; i++){
+            arr[i]=a[i];
+        }
+        return arr;
+        
+    }
+}
+
+Ques2:
+Given an unsorted array, find the minimum difference between any pair in given array.
+ 
+ Code:
+ class Solution
+{
+    public int minimum_difference(int[] nums)
+    {
+        Arrays.sort(nums);
+        int min=nums[1]-nums[0];
+        for(int i=0; i<nums.length-1; i++){
+            int diff=nums[i+1]-nums[i];
+            if(diff<min) min=diff;
+        }
+        return min;
+    }
+}
+
+Ques3:
+Ishwar has got proposals from N girls. Each girl gives him a rose with a number written on it where the number represents the popularity of that girl. Ishwar decides that he'll accept the proposal of the second most popular and the second least popular girl only. Can you help him finding the popularity of those girls?
+Note: The popularity of all the girls are unique.
+
+Code:
+class Solution
+{
+    ArrayList <Integer> acceptedProposals (int arr[], int n)
+    {
+        Arrays.sort(arr);
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(arr[n-2]);
+        al.add(arr[1]);
+        return al;
+    }
+}
+
+Ques4:
+Given an array of N distinct elements, the task is to find all elements in array except two greatest elements in sorted order.
+
+Code:
+class Solution {
+    public long[] findElements( long a[], long n)
+    {
+        Arrays.sort(a);
+        long[] arr=new long[(int)(n-2)];
+        for(int i=0; i<n-2; i++){
+            arr[i]=a[i];
+        }
+        return arr;
+    }
+}
+
+Ques5:
+Given an array arr[] of N distinct integers, output the array in such a way that the first element is first maximum and the second element is the first minimum, and so on.
+
+Code:
+class Solution
+{
+    ArrayList<Long> alternateSort(long arr[] ,int N)
+    {
+        ArrayList<Long> al=new ArrayList<>();
+        Arrays.sort(arr);
+        for(int i=0,j=N-1; i<N; i++,j--){
+            al.add(arr[j]);
+            al.add(arr[i]);
+            if(i==j){
+                al.add(arr[i]);
+                break;
+            }
+        }
+        return al; 
+    }
+}
