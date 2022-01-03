@@ -117,3 +117,6 @@ Day35
 
 Day36
  - learned merge sort
+
+Day37
+ - Solved searching problems.
