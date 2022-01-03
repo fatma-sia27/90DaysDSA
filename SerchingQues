@@ -1,0 +1,96 @@
+Ques1:
+Given an array and an integer B, traverse the array (from the beginning) and if the element in array is B, double B and continue traversal. Find the value of B after the complete traversal.
+
+Code:
+class Solution
+{
+    long solve(int n, long A[], long b)
+    {
+        for(int i=0; i<n; i++){
+            if(A[i]==b){
+                b=b*2;
+            }
+        }
+        return b;
+    }
+}
+
+Ques2:
+Given an array Arr of N positive integers. Your task is to find the elements whose value is equal to that of its index value ( Consider 1-based indexing ).
+
+Code:
+class Solution {
+    ArrayList<Integer> valueEqualToIndex(int arr[], int n) {
+        ArrayList<Integer> al=new ArrayList<>();
+        for(int i=0; i<n; i++){
+            if(arr[i]==(i+1)){
+                al.add(i+1);
+            }
+        }
+        return al;
+    }
+}
+
+Ques3:
+Given a N X N binary Square Matrix where each row and column of the matrix is sorted in ascending order. Find the total number of zeros present in the matrix.
+
+Code;
+class GfG
+{
+    int countZeros(int A[][], int N)
+    {
+        int count=0;
+        for(int i=0; i<N; i++){
+            for(int j=0; j<N; j++){
+                if(A[i][j]==0){
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+}
+
+Ques4:
+Given a string S, remove all consonants and print the modified string that contains vowels only.
+
+
+Code:
+class Solution
+{
+    public String removeConsonants(String s)
+    {
+        String str="No Vowel";
+        boolean chk=false;
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)=='a' || s.charAt(i)=='A' || s.charAt(i)=='e' || s.charAt(i)=='E' || s.charAt(i)=='i' || s.charAt(i)=='I' || s.charAt(i)=='o' || s.charAt(i)=='O' || s.charAt(i)=='u' || s.charAt(i)=='U'){
+                chk=true;
+            }
+        }
+        if(chk==true){
+            return s.replaceAll("[BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]","");
+        }
+        return str;
+    }
+    
+}
+
+Ques5:
+Given an array Arr of size N, print second largest element from an array.
+
+Code;
+class Solution {
+    int print2largest(int arr[], int n) {
+        Arrays.sort(arr);
+        if(n==1) return -1;
+        else{
+            for(int i=n-1; i>0; i--){
+                if(arr[i]!=arr[i-1]){
+                    return arr[i-1];
+                }
+            }
+        }
+        return -1;
+        // code here
+    }
+}
