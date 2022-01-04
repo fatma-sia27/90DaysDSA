@@ -1,0 +1,36 @@
+Ques1:
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+
+Code:
+class Solution { 
+    
+    public boolean isPowerOfTwo(int n) {
+        if(n==0) return false;
+        if(n==1) return true;class Solution {
+        else if(n%2!=0 || n==0) return false;
+        return isPowerOfTwo(n/2);
+    }
+}
+
+Ques2:
+Given an integer n, return true if it is a power of four. Otherwise, return false.
+
+Code:
+ public boolean isPowerOfFour(int n) {
+        if(n==1) return true;
+        else if(n%4!=0 || n==0) return false;
+        return isPowerOfFour(n/4);
+    }
+}
+
+Ques3:
+Given an integer n, return true if it is a power of three. Otherwise, return false.
+
+Code;
+class Solution {
+    public boolean isPowerOfThree(int n) {
+        if(n==1) return true;
+        else if(n%3!=0 || n==0) return false;
+        return isPowerOfThree(n/3);
+    }
+}
