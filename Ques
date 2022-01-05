@@ -1,0 +1,44 @@
+Ques1:
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. 
+
+Code:
+class Solution {
+    int fb(int n){
+        if(n==0) return 0;
+        if(n==1) return 1;
+        return fb(n-1)+fb(n-2);
+    }
+    public int fib(int n) {
+        int ans=fb(n);
+        return ans;
+    }
+}
+
+Ques2:
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+
+Code:
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if(head==null || head.next==null)return head;
+        ListNode temp=head.next;
+        head.next=swapPairs(head.next.next);
+        temp.next=head;
+        return temp;
+    }
+}
+
+Ques3:
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+Code;
+class Solution {
+    public double myPow(double x, int n) {
+        if(n==0) return 1;
+        if(n<0){
+            return (1/x)*myPow(1/x,-(n+1));
+        }
+        
+        return (n%2==0)?(myPow(x*x, n/2)):(x*myPow(x*x, n/2));
+    }
+}
