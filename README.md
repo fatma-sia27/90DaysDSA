@@ -127,3 +127,8 @@ Day38
 Day39
  - Solved problems
 
+Day40
+ - Solved ques
+
+Day41
+ - Solved ques 
