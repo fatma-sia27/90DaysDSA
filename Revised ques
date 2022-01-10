@@ -1,0 +1,46 @@
+Ques:
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+
+code:
+(Recusrsive solution)
+
+class solution{
+  public ListNode removeDuplicates(ListNode head){
+    if(head==null || head.next==null) return head;
+    head.next=removeDuplicates(head.next);
+    return head.val==head.next.val?head.next:head;
+  }
+}
+
+(Iterative solution)
+Time-complexity-O(n)
+class solution{
+  public ListNode removeDuplicates(ListNode head){
+    if(head==null || head.next==null) return head;
+    ListNode temp=head;
+    while(temp!=null){
+      if(temp.val==temp.next.val){
+        temp.next=temp.next.next;
+      }
+      temp=temp.next;
+    }
+    return head;
+  }
+}
+
+Ques2:
+Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.
+Return the decimal value of the number in the linked list.
+
+Code:
+class solution{
+ public int getDecimalValue(ListNode head){
+   ListNode temp=head;
+   int ans=0;
+   while(temp!=null){
+    ans=(ans*2)+temp.val;
+    temp=temp.next;
+   }
+   return ans;
+ }
+}
