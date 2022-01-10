@@ -132,3 +132,9 @@ Day40
 
 Day41
  - Solved ques 
+
+Day42:
+ - Solved linkedlist problems
+
+Day43:
+ - Learned more about recursion.
