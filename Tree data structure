@@ -1,0 +1,13 @@
+Tree Terminology
+A tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are connected by edges. A tree has the following properties:
+
+The tree has one node called root. The tree originates from this, and hence it does not have any parent.
+Each node has one parent only but can have multiple children.
+Each node is connected to its children via edge.
+
+Types of Trees
+Types of trees depend on the number of children a node has. There are two major tree types:
+
+General Tree: A tree in which there is no restriction on the number of children a node has, is called a General tree. Examples are Family tree, Folder Structure.
+
+Binary Tree: In a Binary tree, every node can have at most 2 children, left and right.  In diagram below, B & D are left children and  C, E & F are right children.
