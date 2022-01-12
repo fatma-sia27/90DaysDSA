@@ -138,3 +138,9 @@ Day42:
 
 Day43:
  - Learned more about recursion.
+
+Day44:
+ - Tree data structure
+
+day45
+ - More on tree data structure
