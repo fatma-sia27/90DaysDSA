@@ -144,3 +144,6 @@ Day44:
 
 day45
  - More on tree data structure
+
+Day46
+ - Learned hashmaps
