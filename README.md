@@ -147,3 +147,6 @@ day45
 
 Day46
  - Learned hashmaps
+
+Day47
+ - Solved hashMaps questions.
