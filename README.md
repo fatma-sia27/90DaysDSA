@@ -150,3 +150,6 @@ Day46
 
 Day47
  - Solved hashMaps questions.
+
+Day48
+ - Internal workingg of hashMaps.
