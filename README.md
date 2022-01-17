@@ -153,3 +153,9 @@ Day47
 
 Day48
  - Internal workingg of hashMaps.
+
+Day49
+ - Learned hashcode
+
+day50
+ - Done ques on hashmaps.
