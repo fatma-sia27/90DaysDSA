@@ -159,3 +159,6 @@ Day49
 
 day50
  - Done ques on hashmaps.
+
+Day51
+- Learneed tree data structure
