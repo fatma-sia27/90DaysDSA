@@ -162,3 +162,6 @@ day50
 
 Day51
 - Learneed tree data structure
+
+Day52:
+ - Implemented tree data struvture using linkedlist
