@@ -1,51 +1,51 @@
 # 90DaysDSA
 
 Day1
- - Learned about Time complexity
- - Big O. big omega, little O, litle omega notations
- - Space complexity
+ - Learned about Time complexity;
+ - Big O. big omega, little O, litle omega notations;
+ - Space complexity;
  
 Day2
- - Solved some questions on Time complexity fron Gfg.
+ - Solved some questions on Time complexity fron Gfg;
 
 Day3
- - Learned Recursion and made notes on it.
- - Solved 2-3 problems on that.
+ - Learned Recursion and made notes on it;
+ - Solved 2-3 problems on that;
  
 Day4
- - Practised school level ques from gfg.
+ - Practised school level ques from gfg;
 
 Day5
- - Learned few more about recursion.
- - Done few problems on that.
+ - Learned few more about recursion;
+ - Done few problems on that;
 
 Day6
- - https://www.youtube.com/watch?v=u-HgzgYe8KA
+ - https://www.youtube.com/watch?v=u-HgzgYe8KA ;
 
 Day7
- - Java recursion through notes.
+ - Java recursion through notes;
 
 Day8
- - Suduko solver
+ - Suduko solver;
 
 Day9
- - Solved GFG problems on recursion.
+ - Solved GFG problems on recursion;
  
 Day10
- - Practised medium level questions on GFG.
+ - Practised medium level questions on GFG;
 
 Day11
- - Revised concept of arrays.
+ - Revised concept of arrays;
  
 Day12
- - solved array problems.
+ - solved array problems;
  
 Day13
- - Solved ques from leetcode.
+ - Solved ques from leetcode;
  
 Day14
- - Learned stacks.
- - Learned its theory.
+ - Learned stacks;
+ - Learned its theory;
 
 Day15
  - Done its implementation.
@@ -107,61 +107,64 @@ Day32
  - Solved problems on sorting
 
 Day33
- - Learned selection sort and insertion sort
+ - Learned selection sort and insertion sort;
 
 Day34
- - Done ques on sorting
+ - Done ques on sorting;
  
 Day35
- - Learned quick sort 
+ - Learned quick sort ;
 
 Day36
- - learned merge sort
+ - learned merge sort;
 
 Day37
- - Solved searching problems.
+ - Solved searching problems;
 
 Day38
- - Solved leetcode problems.
+ - Solved leetcode problems;
 
 Day39
- - Solved problems
+ - Solved problems;
 
 Day40
- - Solved ques
+ - Solved ques;
 
 Day41
- - Solved ques 
+ - Solved ques ;
 
 Day42:
- - Solved linkedlist problems
+ - Solved linkedlist problems;
 
 Day43:
- - Learned more about recursion.
+ - Learned more about recursion;
 
 Day44:
- - Tree data structure
+ - Tree data structure;
 
 day45
- - More on tree data structure
+ - More on tree data structure;
 
 Day46
- - Learned hashmaps
+ - Learned hashmaps;
 
 Day47
- - Solved hashMaps questions.
+ - Solved hashMaps questions;
 
 Day48
- - Internal workingg of hashMaps.
+ - Internal workingg of hashMaps;
 
 Day49
- - Learned hashcode
+ - Learned hashcode;
 
 day50
- - Done ques on hashmaps.
+ - Done ques on hashmaps;
 
 Day51
-- Learneed tree data structure
+- Learneed tree data structure;
 
 Day52:
- - Implemented tree data struvture using linkedlist
+ - Implemented tree data struvture using linkedlist;
+
+Day53:
+ - More on Binary tree;
