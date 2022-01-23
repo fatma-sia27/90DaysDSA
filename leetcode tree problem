@@ -1,0 +1,30 @@
+Ques1;
+Given the root of a binary tree, return its maximum depth.
+
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+Code;
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if(root == null) return 0;
+        return Math.max(maxDepth(root.left), maxDepth(root.right))+1;
+    }
+}
+
+Ques2:
+Given the root of a complete binary tree, return the number of the nodes in the tree.
+
+According to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
+
+Design an algorithm that runs in less than O(n) time complexity.
+
+ 
+ Code:
+ class Solution {
+    public int countNodes(TreeNode root) {
+        if(root == null) return 0;
+        
+        return countNodes(root.left)+countNodes(root.right)+1;
+    }
+}
+ 
