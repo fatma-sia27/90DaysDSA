@@ -178,4 +178,15 @@ Day55:
 Day56:
  - Solved leetcode questions
 
+Day57:
+ - Solved level order traversal
+
+Day58:
+ - Solved inorder , preorder, postorder using iteration.
+
+Day59:
+ - leetcode problems
+
+
+
 
